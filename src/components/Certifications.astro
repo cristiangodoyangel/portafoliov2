@@ -1,0 +1,49 @@
+---
+// Certificaciones y educación
+const certs = [
+  { title: "Python para Data Science", org: "Alura Latam", year: "2025" },
+  { title: "Numpy - Análisis Numérico", org: "Alura Latam", year: "2025" },
+  { title: "Formación Java y Spring Framework", org: "Oracle Next Education", year: "2024" },
+  { title: "Oracle Cloud Infrastructure", org: "ONE Alura Latam", year: "2024" },
+  { title: "Certificación Linux Professional", org: "Hola Mundo", year: "2024" },
+  { title: "Modelado de Bases de Datos", org: "Alura Latam", year: "2024" },
+  { title: "Curso de PHP y MySQL", org: "LinkedIn", year: "2024" },
+  { title: "Inteligencia Artificial y Java", org: "Alura Latam", year: "2024" },
+  { title: "Programación con JavaScript", org: "Alura Latam", year: "2024" },
+  { title: "ChatGPT: IA Generativa", org: "Alura Latam", year: "2024" }
+];
+---
+<section class="certifications">
+  <h2>Certificaciones y Educación</h2>
+  <ul class="cert-list">
+    {certs.map(cert => (
+      <li>
+        <strong>{cert.title}</strong> <span>- {cert.org} ({cert.year})</span>
+      </li>
+    ))}
+  </ul>
+</section>
+<style>
+.certifications {
+  padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+}
+.cert-list li {
+  background: #e0e7ff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: left;
+}
+.cert-list strong {
+  color: #2563eb;
+}
+</style>

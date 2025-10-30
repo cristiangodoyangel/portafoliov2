@@ -1,0 +1,120 @@
+---
+// Proyectos destacados: tarjetas visuales
+const projects = [
+  {
+    title: "Data Science - Sueldos Latam",
+    description: "Análisis de 3.700+ registros de salarios en ciencia de datos (2020-2023).",
+    tech: "Python, Pandas, Matplotlib, Seaborn",
+    img: "/assets/datascience%20sueldos.png",
+    code: "https://github.com/cristiangodoyangel/DataScience-SueldosLatam",
+    demo: "https://www.linkedin.com/feed/update/urn:li:activity:7349070936957927424/"
+  },
+  {
+    title: "Data Science - Sismos en Chile",
+    description: "Análisis de actividad sísmica en Chile (2012-2025).",
+    tech: "Python, Pandas, Matplotlib, Seaborn",
+    img: "/assets/sismosChile.png",
+    code: "https://github.com/cristiangodoyangel/Analisis-Sismico-Chile-Data-Science",
+    demo: "https://www.linkedin.com/feed/update/urn:li:activity:7349070936957927424/"
+  },
+  {
+    title: "I360",
+    description: "Sistema para monitoreo de activos físicos empresariales.",
+    tech: "C#, Bootstrap, Tailwind CSS, SQL Server",
+    img: "/assets/i360.png",
+    code: "https://github.com/cristiangodoyangel/Inventario360"
+  },
+  {
+    title: "Lógica",
+    description: "Web para www.weblogica.cl, software e innovación.",
+    tech: "JavaScript, CSS, HTML",
+    img: "/assets/weblogica.png",
+    code: "https://github.com/cristiangodoyangel/Logica_Web",
+    demo: "http://www.weblogica.cl/"
+  },
+  {
+    title: "DR PCGamer",
+    description: "Sistema de agendamiento y servicios técnicos con WhatsApp integrado.",
+    tech: "Java, Spring Boot, Thymeleaf",
+    img: "/assets/drpcgamer.png",
+    code: "https://github.com/cristiangodoyangel/DrPcGamer",
+    demo: "https://drpcgamer.vercel.app/"
+  },
+  {
+    title: "Motors360",
+    description: "Web para empresa de minería y equipamiento.",
+    tech: "JavaScript, CSS, HTML",
+    img: "/assets/m360.png",
+    demo: "http://www.motors360.cl/"
+  }
+];
+---
+<section class="projects">
+  <h2>Proyectos Destacados</h2>
+  <div class="projects-grid">
+    {projects.map(project => (
+      <div class="project-card">
+        <img src={project.img} alt={project.title} class="project-img" />
+        <h3>{project.title}</h3>
+        <p>{project.description}</p>
+        <span class="project-tech">{project.tech}</span>
+        <div class="project-links">
+          {project.demo && <a href={project.demo} target="_blank" class="btn">Demo</a>}
+          {project.code && <a href={project.code} target="_blank" class="btn">Código</a>}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+<style>
+.projects {
+  padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.project-card {
+  background: #f8faff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.project-tech {
+  display: block;
+  margin: 0.7rem 0;
+  font-size: 0.95rem;
+  color: #2563eb;
+  font-weight: 500;
+}
+.project-links {
+  margin-top: auto;
+}
+.btn {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #1e40af;
+}
+</style>

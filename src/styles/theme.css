@@ -1,0 +1,52 @@
+:root {
+  --color-bg: #0A1828;
+  --color-primary: #178582;
+  --color-accent: #BFA181;
+  --color-card: #14243c;
+  --color-text: #fff;
+  --color-white: #fff;
+  --shadow: 0 2px 16px rgba(10,24,40,0.18);
+}
+
+body {
+  /* Paleta clara y azul profesional */
+  :root {
+    --color-bg: #f8faff;
+    --color-primary: #2563eb;
+    --color-secondary: #1e40af;
+    --color-accent: #38bdf8;
+    --color-card: #e0e7ff;
+    --color-text: #222;
+    --color-white: #fff;
+    --shadow: 0 2px 16px rgba(0,0,0,0.08);
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+  h1, h2, h3, h4 {
+    color: var(--color-primary);
+  }
+  .btn {
+    background: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: var(--shadow);
+  }
+  .btn:hover {
+    background: var(--color-accent);
+    color: var(--color-secondary);
+  }
+  .project-card, .cert-list li, .exp-list li, .skills li {
+    background: var(--color-card);
+    box-shadow: var(--shadow);
+  }
+  .footer {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+  .footer-links a {
+    color: var(--color-white);
+  }
+  .footer-links a:hover {
+    color: var(--color-accent);
+  }
