@@ -1,7 +1,7 @@
 :root {
-  --color-bg: #0A1828;
-  --color-primary: #178582;
-  --color-accent: #BFA181;
+  --color-bg: #1a1f2c;
+  --color-primary: #242b3d;
+  --color-accent: #64FFED;
   --color-card: #14243c;
   --color-text: #fff;
   --color-white: #fff;
@@ -12,9 +12,9 @@ body {
   /* Paleta clara y azul profesional */
   :root {
     --color-bg: #f8faff;
-    --color-primary: #2563eb;
-    --color-secondary: #1e40af;
-    --color-accent: #38bdf8;
+    --color-primary: #1a1f2c;
+    --color-secondary: #242b3d;
+    --color-accent: #64FFED;
     --color-card: #e0e7ff;
     --color-text: #222;
     --color-white: #fff;

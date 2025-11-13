@@ -4,9 +4,9 @@
 <section class="hero">
   <div class="hero-content">
     <img src="/profile.png" alt="Cristian Godoy Angel" class="hero-img" />
-    <h1>Cristian Godoy Angel</h1>
-    <h2>Desarrollador FullStack | Data Scientist</h2>
-    <p>Apasionado por la tecnología, la ciencia de datos y el desarrollo de soluciones innovadoras. Busco mi primer trabajo tech para aportar y seguir creciendo.</p>
+    <h1 class="title">Cristian Godoy Angel</h1>
+    <h2 class="h2">Desarrollador FullStack</h2>
+    <p class="parrafo">Especializado en backend y apasionado por el diseño. automatizo procesos y convierto los datos en valor.</p>
     <div class="hero-buttons">
       <a href="/assets/CV_Cristian_Godoy.pdf" class="btn" target="_blank">Descargar CV</a>
       <a href="https://github.com/cristiangodoyangel" class="btn" target="_blank">GitHub</a>
@@ -15,12 +15,31 @@
   </div>
 </section>
 <style>
+.title {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  color: var(--color-accent);
+}
+
+.h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: var(--color-white);
+}
+
+.parrafo {
+  max-width: 700px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 60vh;
-  background: linear-gradient(90deg, #e3f0ff 0%, #f8faff 100%);
+  background: var(--color-primary);
 }
 .hero-content {
   text-align: center;
@@ -39,7 +58,7 @@
   display: inline-block;
   margin: 0 0.5rem;
   padding: 0.7rem 1.4rem;
-  background: #2563eb;
+  background: #1a1f2c;
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
@@ -47,6 +66,6 @@
   transition: background 0.2s;
 }
 .btn:hover {
-  background: #1e40af;
+  background: var(--color-accent);
 }
 </style>
