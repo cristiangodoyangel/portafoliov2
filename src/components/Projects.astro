@@ -7,14 +7,14 @@ const projects = [
     title: "Sistema de ventas Online",
     description: "Ecommerce para tienda en línea, actualmente en producción.",
     tech: "Django, React, Tailwind CSS, SQL Server",
-    img: "/assets/i360.png",
+    img: "/ecommerce.png",
     code: "https://github.com/cristiangodoyangel/Inventario360"
   },
   {
     title: "Lógica",
     description: "Web para www.weblogica.cl, software e innovación.",
     tech: "JavaScript, CSS, HTML",
-    img: "/assets/weblogica.png",
+    img: "/gestion.png",
     code: "https://github.com/cristiangodoyangel/Logica_Web",
     demo: "http://www.weblogica.cl/"
   },
@@ -22,7 +22,7 @@ const projects = [
     title: "DR PCGamer",
     description: "Sistema de agendamiento y servicios técnicos con WhatsApp integrado.",
     tech: "Java, Spring Boot, Thymeleaf",
-    img: "/assets/drpcgamer.png",
+    img: "cotizador.png",
     code: "https://github.com/cristiangodoyangel/DrPcGamer",
     demo: "https://drpcgamer.vercel.app/"
   },
@@ -54,18 +54,23 @@ const projects = [
 </section>
 <style>
 .projects {
-  width: 1000px;
+  width: 1200px;
   padding: 3rem 1rem;
   margin: 0 auto;
   text-align: center;
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  
+  /* --- AÑADE ESTA LÍNEA --- */
+  justify-items: center; 
+  /* ------------------------- */
 }
 .project-card {
+  width: 600px; /* <- Este ancho fijo está causando el problema de la columna única */
   background: #f8faff;
   border-radius: 10px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
